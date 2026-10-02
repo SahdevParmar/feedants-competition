@@ -165,10 +165,10 @@ const seed = async () => {
         bookedSlots: 2,
         judge: judge1,
         dates: {
-          registrationCloses: days(2),
-          submissionStarts: days(3),
-          submissionEnds: days(27),
-          resultDate: days(32),
+          registrationCloses: days(60),
+          submissionStarts: days(65),
+          submissionEnds: days(120),
+          resultDate: days(150),
         },
         about:
           "This is an online classical dance competition open for all age groups. Participate from anywhere and showcase your talent. Express your passion through traditional dance. All submissions will be judged by a panel of professional dancers based on technique, expression, and stage presence.",
@@ -183,10 +183,10 @@ const seed = async () => {
         bookedSlots: 15,
         judge: judge2,
         dates: {
-          registrationCloses: days(4),
-          submissionStarts: days(5),
-          submissionEnds: days(28),
-          resultDate: days(33),
+          registrationCloses: days(60),
+          submissionStarts: days(65),
+          submissionEnds: days(120),
+          resultDate: days(150),
         },
         about:
           "Showcase your voice in this solo singing competition. Any genre welcome — classical, Bollywood, indie, or original compositions. Judges will evaluate pitch, emotion, and stage presence.",
@@ -255,10 +255,10 @@ const seed = async () => {
         bookedSlots: 10,
         judge: judge2,
         dates: {
-          registrationCloses: days(1),
-          submissionStarts: days(2),
-          submissionEnds: days(15),
-          resultDate: days(22),
+          registrationCloses: days(30),
+          submissionStarts: days(35),
+          submissionEnds: days(120),
+          resultDate: days(150),
         },
         about:
           "Got jokes? This is your stage. 3-minute original sets. Judged on writing, timing, and audience connection. Clean content only — no offensive material.",
