@@ -39,8 +39,9 @@ export async function signupController(req, res) {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // must be false on localhost HTTP
-      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production", // true on Render
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
     return res.status(200).json({
       message: "signup success",
@@ -85,8 +86,9 @@ export async function loginController(req, res) {
     });
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // must be false on localhost HTTP
-      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production", // true on Render
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
     return res.status(201).json({
       message: "loggin success",
