@@ -7,7 +7,7 @@ import competitionRouter from "./routes/competition.routes.js";
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // exact origin, NOT *
+    origin: ["http://localhost:5173"], // exact origin, NOT *
     credentials: true, // allow cookies
   }),
 );

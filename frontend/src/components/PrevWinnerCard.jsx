@@ -1,6 +1,6 @@
 import React from "react";
 
-const PrevWInnerCard = ({ winner }) => {
+const PreviousWinnerCard = ({ winner }) => {
   return (
     <div className="flex shrink-0 bg-gray-100 rounded-lg p-1 items-center gap-2">
       <div className="h-20 w-20 rounded-lg overflow-hidden bg-slate-200">
@@ -21,4 +21,4 @@ const PrevWInnerCard = ({ winner }) => {
   );
 };
 
-export default PrevWInnerCard;
+export default PreviousWinnerCard;

@@ -17,7 +17,7 @@ import CountdownBanner from '@/components/CountdownBanner';
 import CompetitionDetails from '@/components/CompetitionDetails';
 import RewardDetails from '@/components/RewardsDetails';
 import api from '@/api/client';
-import PrevWInnerCard from '@/components/prevWInnerCard';
+import PreviousWinnerCard from '@/components/PrevWinnerCard';
 import IsoDateconverter from '@/components/IsoDateconverter';
 import Header from '@/components/Header';
 
@@ -279,7 +279,7 @@ console.log(data)
                 
                 
                 return (
-                <PrevWInnerCard key={idx} winner={winner}/>
+                <PreviousWinnerCard key={idx} winner={winner}/>
               )})
             }
 
