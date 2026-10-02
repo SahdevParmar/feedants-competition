@@ -9,9 +9,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://feedants-competition.vercel.app/",
-    ], // exact origin, NOT *
-    credentials: true, // allow cookies
+      "https://feedants-competition.vercel.app",
+    ],
+    credentials: true,
   }),
 );
 app.use(cookieParser());
